@@ -1,3 +1,4 @@
+// ================= Кошик =================
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 function addToCart(button) {
@@ -8,6 +9,9 @@ function addToCart(button) {
   cart.push({ name, price });
   saveCart();
   updateCartUI();
+
+  // Повідомлення
+  alert(`🎁 Ви додали "${name}" у кошик!`);
 }
 
 function removeFromCart(index) {
@@ -53,5 +57,40 @@ function updateCartUI() {
   }
 }
 
-// Ініціалізація при завантаженні сторінки
+// ================= Реєстрація =================
+let users = JSON.parse(localStorage.getItem('users')) || [];
+
+function register() {
+  const username = document.getElementById('reg-username').value.trim();
+  const password = document.getElementById('reg-password').value.trim();
+
+  if(!username || !password) {
+    alert("Введіть логін і пароль");
+    return;
+  }
+
+  const exists = users.some(u => u.username === username);
+  if(exists) {
+    alert("Користувач з таким логіном вже існує!");
+    return;
+  }
+
+  users.push({ username, password });
+  localStorage.setItem('users', JSON.stringify(users));
+  alert("Реєстрація успішна!");
+}
+
+function login() {
+  const username = document.getElementById('login-username').value.trim();
+  const password = document.getElementById('login-password').value.trim();
+
+  const user = users.find(u => u.username === username && u.password === password);
+  if(user) {
+    alert(`Вітаємо, ${username}! Ви увійшли.`);
+  } else {
+    alert("Невірний логін або пароль");
+  }
+}
+
+// Ініціалізація UI
 updateCartUI();
