@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  background: #f9f9f9;
 }
 
 /* Навігація */
@@ -45,34 +45,24 @@ nav a:hover {
 
 /* Header */
 header {
+  text-align: center;
+  padding: 60px 20px;
   background: linear-gradient(rgba(179,0,0,0.8), rgba(255,215,79,0.8)), url("https://i.imgur.com/8ZQZQZC.jpg") center/cover no-repeat;
   color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-header button {
-  margin-top: 20px;
-  padding: 15px 30px;
-  border: none;
-  background: #ffd54f;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 5px;
 }
 
 /* Секції */
 section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
 h2 {
   color: #b30000;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-/* Подарунки */
+/* Товари */
 .gifts {
   display: flex;
   flex-wrap: wrap;
@@ -82,7 +72,7 @@ h2 {
 
 .gift {
   background: white;
-  padding: 25px;
+  padding: 20px;
   width: 220px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
@@ -98,17 +88,15 @@ h2 {
 }
 
 .gift button {
-  margin-top: 15px;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 10px 15px;
   background: #b30000;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: bold;
 }
 
-/* Кошик */
 #cart-items {
   max-width: 600px;
   margin: auto;
@@ -127,5 +115,24 @@ h2 {
   padding: 5px 10px;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
+}
+
+/* Реєстрація */
+#register input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#register button {
+  padding: 10px 20px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
