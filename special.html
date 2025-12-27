@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Спеціальні пропозиції</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Orner 🧸</div>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="special.html">Спеціальні</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>✨ Спеціальні пропозиції</h1>
+    <p>Тільки цього Різдва 🎄</p>
+  </header>
+
+  <section id="special-gifts">
+    <div class="gifts">
+      <div class="gift" data-name="Святкова зірка" data-price="400">
+        <span>🌟</span>
+        <h3>Святкова зірка</h3>
+        <p>400 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+      <div class="gift" data-name="Пазл" data-price="250">
+        <span>🧩</span>
+        <h3>Пазл</h3>
+        <p>250 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+      <div class="gift" data-name="Міні-піаніно" data-price="600">
+        <span>🎹</span>
+        <h3>Міні-піаніно</h3>
+        <p>600 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Christmas Gifts: Orner 🧸
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Christmas Gifts: Orner 🧸 - Головна</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Orner 🧸</div>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="special.html">Спеціальні</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cart.html">Кошик (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Christmas Gifts: Orner 🧸</h1>
+    <p>Найкращі різдвяні подарунки для всієї родини 🎄</p>
+  </header>
+
+  <section id="gifts">
+    <h2>🎁 Наші подарунки</h2>
+    <div class="gifts">
+      <div class="gift" data-name="Плюшевий ведмедик" data-price="300">
+        <span>🧸</span>
+        <h3>Плюшевий ведмедик</h3>
+        <p>300 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+      <div class="gift" data-name="Ялинкова прикраса" data-price="150">
+        <span>🎄</span>
+        <h3>Ялинкова прикраса</h3>
+        <p>150 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+      <div class="gift" data-name="Подарунковий бокс" data-price="500">
+        <span>🎁</span>
+        <h3>Подарунковий бокс</h3>
+        <p>500 грн</p>
+        <button onclick="addToCart(this)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Christmas Gifts: Orner 🧸
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

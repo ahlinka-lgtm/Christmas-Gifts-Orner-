@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* Навігація */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b30000;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(179,0,0,0.8), rgba(255,215,79,0.8)), url("https://i.imgur.com/8ZQZQZC.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  background: #ffd54f;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Секції */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #b30000;
+  margin-bottom: 40px;
+}
+
+/* Подарунки */
+.gifts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gift {
+  background: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.gift:hover {
+  transform: scale(1.05);
+}
+
+.gift span {
+  font-size: 50px;
+}
+
+.gift button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #b30000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Кошик */
+#cart-items {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  background: #ff5252;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
